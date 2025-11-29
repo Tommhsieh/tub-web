@@ -70,6 +70,97 @@ p{
     text-transform: uppercase;
 }
 
+/* 輪播 carousel */
+/* 外框 */
+.carousel {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden; /* 只顯示框內的內容 */
+    border-radius: 10px;
+}
+
+/* 內層圖片容器 */
+.carousel-inner {
+    display: flex; /* 讓 item 橫向排列 */
+    transition: transform 0.5s ease; /* 動畫 */
+}
+
+/* 單張圖片 */
+.carousel-item img {
+    width: 100vw; /* 螢幕全寬 */
+    height: 400px ;
+    display: block;
+    object-fit: contain;
+}
+
+/* 左右按鈕 */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+
+/* 底部圓點 */
+.dots {
+    text-align: center;
+    /* margin-top: 10px; */
+}
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.dot.active {
+    background: #333;
+}
+
+.a1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.a1-content{
+    max-width: 500px;
+}
+
+.a1-title{
+    padding-bottom: 30px;
+}
+
+.a1-img{
+    width: 300px;
+    height: auto;
+}
+
+h2 {
+    margin: 0;
+}
+
+small{
+    font-size: 16px;
+}
 
 
 
